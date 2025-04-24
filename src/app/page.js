@@ -2,7 +2,9 @@
 
 import { useState, useEffect, useRef } from 'react';
 
-const PI = '14159265358979323846264338327950288419716939937510';
+import piData from '../lib/pi-digits.json';
+
+const PI = piData.pi;
 
 export default function Home() {
   const [input, setInput] = useState('');
